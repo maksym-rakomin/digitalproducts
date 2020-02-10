@@ -1,0 +1,490 @@
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+@import 'lib/slick';
+@import 'slider';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100%;
+    @include text($text-color, $text-font, 2rem, 500);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 96%;    
+    &--730 {
+        width: 55%;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--jc-c {
+        justify-content: center;
+    }
+}
+
+    
+    .btn {
+        display: inline-block;
+        padding: 20px 50px;
+        font-style: italic;
+        @include text($text-color, $text-font, inherit, 400, 1);
+        border: 1px solid $text-color;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        @include hover {
+            border-right-color: $text-color;
+            border-bottom-color: $text-color;
+            border-left-color: transparent;
+            border-top-color: transparent;
+        }
+        &--white {
+            color: $white;
+            border-left-color: $white;
+            border-top-color: $white;
+            @include hover {
+                border-right-color: $white;
+                border-bottom-color: $white;
+                border-left-color: transparent;
+                border-top-color: transparent;
+            }
+            
+        }
+    }
+    .swipe-up {
+        width: 90px;
+        height: 90px;
+        background-color: fade-out($brand-color, .5);
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        @include hover {
+            background-color: fade-out($brand-color, 0);
+        }
+    }
+    
+    
+    
+    
+    
+    .svg {
+        fill: fade-out($white, .3);
+        fill-rule: evenodd;
+        stroke: fade-out($white, .3);
+        stroke-width: 1px;
+        @include hover {
+            fill: fade-out($white, 0);
+            stroke: fade-out($white, 0);
+        }
+    }   
+    .header {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        color: $white;
+        &__content {
+            height: 80vh;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__title {
+            text-transform: uppercase;
+            margin: 20px auto;
+            text-align: center;
+            @include text($white, $title-font, 5rem, 700, 1);
+            padding: 5px;
+        }
+        &__subtitle {
+            @include text($white, $text-font, 3rem, 400, 1);
+            font-style: italic;
+            width: 80%;
+            text-align: center;
+            padding: 5px;
+    }
+}  
+.nav {
+    padding: 30px 0;
+    position: relative;
+    
+    
+    &__logo {
+        display: block;
+    }
+    &__items{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-transform: uppercase;
+    }
+    &__item {
+        display: inline-block;
+        @include text(fade-out($white, .3), $title-font, 1.8rem, 700, 1);
+        margin-left: 3rem;
+        
+        @include hover {
+            color: fade-out($white, 0);
+        }
+    }
+    &__toggle {
+        display: none;
+    }
+
+}
+.footer {
+    background: $brand-color;
+    padding: 75px 0;
+    .copyright {
+        @include text($white, $text-font, 1.8rem, 400, 1);
+        &__bold {
+            font-weight: 700;
+            @include hover {
+                color: fade-out($white, .8)
+            }
+        }
+    }
+}
+.social {
+    margin: 0;
+    padding: 20px 10px;
+    background-color: $brand-color;
+    
+    &__item {
+        display: inline-block;
+        list-style: none;
+        margin-left: 25px;
+    }
+    &__link {
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        background-color: $white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include hover {
+            transform: scale(1.2)
+        }
+        
+    }
+    &__icon {
+        color: $brand-color;
+    }
+}
+.section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    &__cover {
+        text-transform: uppercase;
+        width: 32%;
+        position: relative;
+        flex-shrink: 1;
+    }
+    &__img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    &__title {
+        @include text($white, $title-font, 3.6rem, 700, 1);
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        text-transform: uppercase;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        &::before {
+            content: "";
+            display: block;
+            width: 6rem;
+            height: 6rem;
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        &--relative {
+            position: relative;
+            transform: none;
+            left: 0;
+            margin-bottom: 65px;
+        }
+        &--text-black {
+            color: $text-color;
+        }
+        &--top-20 {
+            top: 20%;
+        }
+    }
+    &__card-title {
+        @include text($text-color, $text-font, 2.4rem, 700, 1);
+        text-transform: uppercase;
+        position: absolute;
+        top: 40%;     
+        text-align: center;
+        width: 100%;       
+    }
+    &__subtitle {
+        @include text($white, $text-font, 1.8rem, 400, 1.5);
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        display: block;
+        margin: 0;
+        text-transform: initial;
+        font-style: italic;
+        padding:0 30px;
+        text-align: center;
+        @include overflow(32.5rem);
+        &--card {
+            top: 65%;
+            @include text($text-color, $text-font, 1.8rem, 400, 1.5);
+            padding: 0 2rem;
+            @include overflow;
+        }
+    }
+    &-author {
+        font-weight: 400;
+    }
+    &__logo-title {
+        display: block;
+        width: 6rem;
+        height: 6rem;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        object-fit: scale-down;
+        &--card {
+            top: 20%
+        }
+    }
+    
+    &__description {
+        width: 68%;
+        padding: .5rem .5rem .5rem 12.5rem;
+        text-align: center;
+        flex-shrink: 2;
+        &--p0 {
+            padding: 0;
+            flex-wrap: wrap;
+        }
+    }
+    &__text {
+        margin-bottom: 10rem;
+        text-align: left;
+        @include text($text-color, $text-font, 2rem, 400, 1.4);
+        
+        p + p {
+            margin: 2rem auto;
+        }
+    }
+    &__card {
+        width: 50%;
+        padding-top: 45.9%;
+        position: relative;
+        background: $white;
+        &--bg-gray {
+            background: $gray;
+        }
+    }
+    &__hidden-box {
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 350px;
+        text-align: center;
+        position: absolute;
+        z-index: 2;
+        right: -260px;
+        top: 30%;
+    }
+    &__block {
+        background-color: fade-out($white, .5);
+        font-size: 0;
+        @include hover {
+            transform: translateX(-260px);
+        }
+    }
+    &__icon {
+        width: 90px;
+        height: 90px;
+        background-color: $brand-color;
+    }
+    &__adress {
+        padding: 10px;
+        height: 100%;
+        @include text ($text-color, $text-font, 1.8rem, 400, 1.3);
+        flex: 1 1;
+        @include overflow;
+    }    
+}
+
+
+
+
+
+.about {
+    padding: 125px 0;
+    .section__title::before {
+        background-image: url(../img/Icon-AboutUs.png);
+    }
+}
+.services {
+    .section__title::before {
+        background-image: url(../img/Icon-Services.png);
+    }
+}
+.works {
+    padding: 140px 0 60px;
+    text-align: center;
+    position: relative;
+    .section__title::before {
+        background-image: url(../img/Icon-Works.png);
+    }
+}
+.team {
+    padding: 140px 0 100px;
+    text-align: center;
+    position: relative;
+    background-color: $gray-light;
+    .section__title::before {
+        background-image: url(../img/Icon-Team.png);
+    }
+    &__card {
+        position: relative;
+        padding-top: 110px;
+    }
+    &__img {
+        border: 15px solid $gray-light;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+        width: 240px;
+        height: 240px;
+        position: absolute;
+        top: -2%; 
+        left: 50%;
+        transform: translateX(-50%); 
+    }
+    &__wrap {
+        background-color: $white;
+        padding: 150px 0 0;
+    }
+    &__name {
+        text-transform: uppercase;
+        @include text ($brand-color, $title-font, 2.4rem, 700, 1);
+        margin-bottom: 35px;
+    }
+    &__position {
+        @include text ($text-color, $text-font, 2.4rem, 400, 1);
+        margin-bottom: 35px;
+        font-style: italic;
+    }
+    .social li {
+        margin: 0 5px;
+    }
+}
+.touch-map {
+    position: relative;
+    background-color: $brand-color;
+    overflow: hidden;
+    .section__title::before {
+        background-image: url(../img/icon-map.png);
+    }
+    .form {
+        max-width: 860px;
+        width: 80%;
+        @include text($white, $text-font, 0, 400, 1.6);
+        font-style: italic;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        
+        &__name,
+        &__email,
+        &__message {
+            font-size: 1.8rem;
+            background-color: fade-out($white, 0.8);
+            border: 0;
+            padding: 20px;
+            border-radius: 5px;
+            &::placeholder {
+                font-style: italic;
+                @include text($white, $text-font, inherit, 400, 1.6);
+            }
+        }
+        
+        &__name,
+        &__email {
+            width:calc(50% - 15px);
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        &__name {
+            margin-right: 30px;
+        }
+        &__message {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        &__btn {
+            display: block;
+            margin: 0 auto;
+            padding: 20px 65px;
+            @include text($white, $title-font, 2rem, 700, 1);
+            background-color: $brand-color;
+            text-transform: uppercase;
+            border: 0;
+            border-radius: 5px;
+            border-bottom: 3px solid darken($brand-color, 5);
+            cursor: pointer;
+            @include hover {
+                background-color: darken($brand-color, 5);
+            }          
+        }
+        
+    }
+}
+
+.map{
+    min-height: 100vh;
+    opacity: .5;
+}
+
+
+@import 'headroom';
+@import 'media';

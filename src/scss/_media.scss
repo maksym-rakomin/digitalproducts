@@ -1,0 +1,270 @@
+@media screen and (max-width: 1060px) {
+    .section {
+        &__hidden-box {
+            right: -300px;
+        }
+        &__icon {
+            width: 15%;
+            padding: 5px;
+        }
+        &__text{
+            margin-bottom: 5rem;
+        }
+        &__cover {
+            width: 40%;
+        }
+        &__desciption {
+            width: 60%;
+        }
+        &__card {
+            padding-top: 60.2%;
+        }
+        &__card-title {
+            font-size: 2rem;
+        }
+        &__card-subtitle {
+            font-size: 1.6rem;
+        }
+    }
+    .about {
+        padding: 60px 0;
+    }
+}
+@media screen and (max-width: 860px) {
+    .container {
+        &--730 {
+            width: 80%;
+        }
+    }
+    .section {
+        &__description {
+            padding: 0;
+            width: 100%;
+        }
+        &__cover {
+            width: 100%;
+            height: 30rem;
+        }
+        &__img {
+            height: 100%;
+        }
+        &__title::before{
+            top: -200%;
+        }
+        &__card {
+            padding-top: 50%;
+        }
+    }
+    .about {
+        .flex {
+            flex-direction: column;
+        }
+    }
+    .services > .flex {
+            flex-direction: column-reverse;
+        // }
+    }
+    .slider {
+        &__arrow {
+            width: 10%;
+            height: 10%;
+
+            &--left {
+                left: 0%;
+            }
+            &--right {
+                right: 0%;
+            }
+        }
+    }
+    .header {
+        &__title {
+            font-size: 4rem;
+        }
+        &__subtitle {
+            font-size: 2.5rem;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .flex{
+        &--nav {
+            align-items: flex-end;
+        }
+    }
+
+    .nav{
+        // background-color: fade-out($brand-color, .2);
+
+        &__toggle {
+            display: block;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+        }
+        &__items {
+            background-color: fade-out($brand-color, .2);
+            position: absolute;
+            // width: 100vw;
+            height: 100vh;
+            // position: fixed;
+            // top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            // z-index: 1;
+            // padding: 30px;
+            transform: translateY(-200%);
+            transition: 1s ease
+        }
+        .open {
+            transform: translateY(100%);
+        }
+        &__item {
+            display: block;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+    .header {
+        &__title {
+            font-size: 3rem;
+        }
+        &__subtitle {
+            font-size: 2rem;
+        }
+    }
+    .touch-map {
+        // background-color: $gray-light;
+        
+        .form {
+            width: 100%;
+            position: static;
+            transform: translateX(0);
+            background-color: $gray;
+            padding: 30px 10px;
+            &__name,
+            &__email,
+            &__message {
+                background-color: fade-out($brand-color, 0.3);
+            }
+        }
+        .swipe-up {
+            right: 0px;
+            bottom: 0px;
+            // background-color: $white;
+        }
+    }
+    .section {
+        &__title{
+            &--top-20 {
+                top: 12%;
+            }
+        }
+    }
+    .social {
+        
+        &__item {
+            margin-left: 15px;
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .touch-map {
+        .form {
+            &__name,
+            &__email,
+            &__message {
+                width: 100%;
+                margin: 0 0 10px 0;
+            }
+            &__btn {
+                padding: 20px;
+            }
+        }
+        .swipe-up {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .section {
+        &__cover {
+            width: 100%;
+            height: 25rem;
+        }
+        
+        &__title::before{
+            top: -300%;
+        }
+        &__title{
+            top: 40%;
+            font-size: 2.5rem;
+            &--relative {
+                margin-bottom: 30px;
+            }
+            &--top-20{
+                top: 10%;
+            }
+        }
+        &__subtitle {
+            top: 55%;
+            &--card {
+                top: 65%;
+                line-height: 1.2;
+            }
+        }
+    }
+    .about {
+        padding: 30px 0;
+    }
+    .works {
+        padding: 100px 5px 30px;
+        .slick-dots {
+            margin: 10px 5px 20px;
+        }
+    }
+    .team {
+        padding: 100px 5px 30px;
+    }
+    
+    .footer {
+        .flex {
+            display: block;
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width: 520px) {
+    .section {
+        &__card {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .header {
+        &__title {
+            font-size: 2rem;
+        }
+        &__subtitle {
+            font-size: 1rem;
+        }
+    }
+    .section {
+        &__card {
+            padding-top: 70%;
+        }
+    }
+    .blockquote {
+        padding: 0 5px;
+    }
+    .slider {
+        &__container{
+            margin: 0 auto 40px;
+            width: 100%;
+        }
+        &__arrow {
+            display: none;
+        }
+    }
+}

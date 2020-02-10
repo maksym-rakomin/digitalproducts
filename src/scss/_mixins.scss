@@ -1,0 +1,41 @@
+@mixin text($color: inherit, $family: inherit, $size: 1.6rem, $weight: 400, $line: 1.7) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: $line;
+}
+
+@mixin tr {
+    transition: all .4s ease;
+}
+
+@mixin hover {
+    @include tr();
+    &:hover,
+    &:focus,
+    &:active,
+    .active {
+        @content;
+    }
+}
+@mixin hover-no-focus {
+    @include tr();
+    &:hover,
+    &:active,
+    .active {
+        @content;
+    }
+}
+
+@mixin posCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin overflow($font-size: 4.5em) {
+    overflow: hidden;
+    max-height: $font-size;
+}
