@@ -1,459 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.min.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.min.css" />
     <title>digitalproducts</title>
-</head>
-<body>
-    <header id="hero" class="header" style="background-image: url(img/bg-header.jpg);">
-        <nav class="nav headroom fixed-top" id="nav">
-            <div class="container flex flex--nav">
-                <a class="nav__logo svg" href="#">
-                    <svg  width="54px" height="72px" viewBox="0 0 53.531 72">
-                        <use xlink:href="#logo"/>
-                    </svg>
-                </a>
-                
-                <ul class="nav__items">
-                    <li class="nav__item">
-                        <a href="#" class="nav__link active">HOME</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">ABOUT</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#services" class="nav__link">SERVICES</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#works" class="nav__link">works</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">CONTACT</a>
-                    </li>
-                </ul>
-                <div class="nav__toggle svg">
-                    <svg width="40px" height="72px" viewBox="0 0 31 15">
-                        <use xlink:href="#toggle"/>
-                    </svg>
-                </div>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="header__content flex">
-                <h1 class="header__title">CreativE DIGITAL Project</h1>
-                <div class="header__subtitle">Duis mollis, est non commodo luctus, <br/>nisi erat porttitor ligula, eget lacinia odio sem nec elit.</div>
-            </div>
-        </div>
-    </header>
-        <main>
-            <section id="about" class="section about">
-                <div class="container flex">
-                    <div class="section__cover">
-                        <img src="#" class="section__img lazyload" data-src="img/about.jpg" alt="about us">
-                        <h2 class="section__title">about us</h2>
-                    </div>
-                    <div class="section__description">
-                        <div class="section__text">
-                            <p>Nullam quis risus eget urna <strong>mollis ornare</strong> vel eu leo. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                            <p><strong>Morbi leo risus</strong>, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet <em>fermentum</em>. Sed posuere consectetur est at lobortis.</p>
-                        </div>
-                        <a href="#" class="btn">Learn More</a>
-                    </div>
-                </div>
-            </section>
-            <section id="services" class="section services">
-                <div class="container flex">
-                    <div class="section__description section__description--p0 flex">
-                        <div class="section__card section__card--bg-gray">
-                            <img src="#" data-src="img/Icon-Graphic.png" alt="Graphic Design" class="lazyload section__logo-title section__logo-title--card">
-                            <h4 class="section__card-title">Graphic Design</h4>
-                            <div class="section__subtitle section__subtitle--card">Cras mattis consectetur purus sit amet fermentum.</div>
-                        </div>
-                        <div class="section__card">
-                            <img src="#" data-src="img/Icon-Web.png" alt="WEB DEVELOPMENT" class="lazyload section__logo-title section__logo-title--card">
-                            <h4 class="section__card-title">WEB DEVELOPMENT</h4>
-                            <div class="section__subtitle section__subtitle--card">Cras mattis consectetur purus sit amet fermentum.</div>
-                        </div>
-                        <div class="section__card">
-                            <img src="#" data-src="img/Icon-SEO.png" alt="SEO & MARKETING" class="lazyload section__logo-title section__logo-title--card">
-                            <h4 class="section__card-title">SEO & MARKETING</h4>
-                            <div class="section__subtitle section__subtitle--card">Cras mattis consectetur purus sit amet fermentum.</div>
-                        </div>
-                        <div class="section__card section__card--bg-gray">
-                            <img src="#" data-src="img/Icon-Mobile.png" alt="MOBILE DEVELOPMENT" class="lazyload section__logo-title section__logo-title--card">
-                            <h4 class="section__card-title">MOBILE DEVELOPMENT</h4>
-                            <div class="section__subtitle section__subtitle--card">Cras mattis consectetur purus sit amet fermentum.</div>
-                        </div>
-                    </div>
-                    <div class="section__cover">
-                        <img src="#" class="section__img lazyload" data-src="img/services.jpg" alt="about us">
-                        <h2 class="section__title">our services</h2>
-                        <blockquote class="section__subtitle blockquote" cite="#">
-                            “Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, haretra augue.”
-                            <div class="section__author">- Borat -</div>
-                        </blockquote>
-                    </div>
-                </div>
-            </section>
-            <section id="works" class="section works" style="background-image: url(img/bg-works.jpg);">
-                <div class="container">
-                    <h2 class="section__title section__title--relative">recent works</h2>
-                </div>
-                <div class="arrows">                        
-                  <a href="#" class="slider__arrow slider__arrow--left work-slider__arrow--left">
-                    <svg width="22px" height="38px" viewBox="0 0 22 38">
-                        <use xlink:href="#arrow__left"/>
-                    </svg>
-                  </a>
-                  <a href="#" class="slider__arrow slider__arrow--right work-slider__arrow--right">
-                      <svg width="22px" height="38px" viewBox="0 0 22 38">
-                          <use xlink:href="#arrow__right"/>
-                      </svg>
-                  </a>
-                </div>
-                <div class="container container--730 slider__container">
-                    <div class="work-slider">
-                        <a href="#" class="slide">
-                            <img src="#" class="slider__img lazyload" data-src="img/works-slider.jpg" alt="our work">
-                        </a>
-                        <a href="#" class="slide">
-                            <img src="#" class="slider__img lazyload" data-src="img/works-slider.jpg" alt="our work">
-                        </a>
-                        <a href="#" class="slide">
-                            <img src="#" class="slider__img lazyload" data-src="img/works-slider.jpg" alt="our work">
-                        </a>
-                        <a href="#" class="slide">
-                            <img src="#" class="slider__img lazyload" data-src="img/works-slider.jpg" alt="our work">
-                        </a>
-                    </div>
-                    <a href="#" class="btn btn--white">View Gallery</a>
-                </div>
-            </section>
-            <section class="section team">
-                <div class="container">
-                    <h2 class="section__title section__title--relative section__title--text-black">meet our team</h2>
-                    <div class="arrows">                        
-                        <a href="#" class="slider__arrow slider__arrow--left team-slider__arrow--left">
-                            <svg width="22px" height="38px" viewBox="0 0 22 38">
-                                <use xlink:href="#arrow__left"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="slider__arrow slider__arrow--right team-slider__arrow--right">
-                            <svg width="22px" height="38px" viewBox="0 0 22 38">
-                                <use xlink:href="#arrow__right"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="slider__container">
-                      <div class="slider-team">
-                          <div class="slide">
-                              <div class="team__card">
-                                  <img src="#" class="team__img lazyload" data-src="img/team-miguel-obrien.jpg" alt="Michuel Obrien">
-                                  <div class="team__wrap">
-                                      <div class="team__name">Michuel Obrien</div>
-                                      <div class="team__position">CEO & Founder</div>
-                                      <ul class="social">
-                                          <li class="social__item">
-                                              <a href="#" class="social__link" target="blanck">
-                                                  <i class="social__icon fab fa-linkedin"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-google"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-facebook"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-twitter"></i>
-                                            </a>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="slide">
-                              <div class="team__card">
-                                  <img src="#" class="team__img lazyload" data-src="img/team-lida-morrison.jpg" alt="Jackie Carroll">
-                                  <div class="team__wrap">
-                                      <div class="team__name">Michuel Obrien</div>
-                                      <div class="team__position">ART Director</div>
-                                      <ul class="social">
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-behance"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                              <a href="#" class="social__link" target="blanck">
-                                                  <i class="social__icon fab fa-linkedin"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-google"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-facebook"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-twitter"></i>
-                                            </a>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="slide">
-                              <div class="team__card">
-                                  <img src="#" class="team__img lazyload" data-src="img/team-ida-morrison.jpg" alt="Ida Morrison">
-                                  <div class="team__wrap">
-                                      <div class="team__name">Ida Morrison</div>
-                                      <div class="team__position">Designer</div>
-                                      <ul class="social">
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-behance"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                              <a href="#" class="social__link" target="blanck">
-                                                  <i class="social__icon fab fa-linkedin"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-google"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-facebook"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-twitter"></i>
-                                            </a>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="slide">
-                              <div class="team__card">
-                                  <img src="#" class="team__img lazyload" data-src="img/team-miguel-obrien.jpg" alt="Michuel Obrien">
-                                  <div class="team__wrap">
-                                      <div class="team__name">Michuel Obrien</div>
-                                      <div class="team__position">CEO & Founder</div>
-                                      <ul class="social">
-                                          <li class="social__item">
-                                              <a href="#" class="social__link" target="blanck">
-                                                  <i class="social__icon fab fa-linkedin"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-google"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-facebook"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-twitter"></i>
-                                            </a>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="slide">
-                              <div class="team__card">
-                                  <img src="#" class="team__img lazyload" data-src="img/team-lida-morrison.jpg" alt="Jackie Carroll">
-                                  <div class="team__wrap">
-                                      <div class="team__name">Michuel Obrien</div>
-                                      <div class="team__position">ART Director</div>
-                                      <ul class="social">
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-behance"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                              <a href="#" class="social__link" target="blanck">
-                                                  <i class="social__icon fab fa-linkedin"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-google"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-facebook"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-twitter"></i>
-                                            </a>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="slide">
-                              <div class="team__card">
-                                  <img src="#" class="team__img lazyload" data-src="img/team-ida-morrison.jpg" alt="Ida Morrison">
-                                  <div class="team__wrap">
-                                      <div class="team__name">Ida Morrison</div>
-                                      <div class="team__position">Designer</div>
-                                      <ul class="social">
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-behance"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                              <a href="#" class="social__link" target="blanck">
-                                                  <i class="social__icon fab fa-linkedin"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-google"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-facebook"></i>
-                                            </a>
-                                          </li>
-                                          <li class="social__item">
-                                            <a href="#" class="social__link" target="blanck">
-                                              <i class="social__icon fab fa-twitter"></i>
-                                            </a>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-                </div>
-              </section>
-              <section id="contact" class="touch-map">
-                <h2 class="section__title section__title--top-20">get in touch</h2>
-                <ul class="section__hidden-box">
-                  <li class="section__block">
-                    <div class="section__link flex" target="_blank">
-                      <div class="section__icon flex flex--jc-c">
-                        <img src="#" class="lazyload" data-src="img/Icon-Address.png" alt="Icon">
-                      </div>
-                      <a  href="https://maps.google.com?saddr=Current+Location&daddr=43.12345,-76.12345" class="section__adress">Ikan Piranha Atas 220C<br/>
-                        Malang - East Java<br/>
-                        Indonesia
-                      </a>
-                    </div>
-                  </li>
-                  <li class="section__block">
-                    <div class="section__link flex">
-                      <div class="section__icon flex flex--jc-c">
-                        <img src="#" class="lazyload" data-src="img/icon-mobile.png" alt="Icon">
-                      </div>
-                      <a href="tel:+38(000)000-00-00" class="section__adress">+38 (000) 000-00-00</a>
-                    </div>
-                  </li>
-                </ul>
-                <div class="map" id="map"></div>
-                <form id="form" class="form" action="#" method="get">
-                    <input class="form__name" type="text" value="" placeholder="Your Name">
-                    <input class="form__email" type="email" value="" placeholder="Your Email">
-                    <textarea class="form__message" name="text" id="text" cols="30" rows="8" placeholder="Your Message"></textarea>
-                    <span class="form__toucn">touch the map and I'll hide</span>
-                    <button class="form__btn" type="submit">Send message</button>
-                </form>
-                <a href="#hero" class="swipe-up flex flex--jc-c">
-                  <svg class="svg" width="36" height="21" viewBox="0 0 36 21">
-                    <use xlink:href="#arrow__up"/>
-                  </svg>
-                </a>
-            </section>
-        </main>
-        <footer class="footer">
-          <div class="container flex">
-            <div class="copyright">
-              &copy; 2014 <a href="#" class="copyright__bold">tulus</a>driyo. All Rights Reserved.
-            </div>
-            <ul class="social">
-              <li class="social__item">
-                <a href="#" class="social__link" target="blanck">
-                  <i class="social__icon fab fa-behance"></i>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link" target="blanck">
-                  <i class="social__icon fab fa-linkedin"></i>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link" target="blanck">
-                  <i class="social__icon fab fa-google"></i>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link" target="blanck">
-                  <i class="social__icon fab fa-facebook"></i>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link" target="blanck">
-                  <i class="social__icon fab fa-twitter"></i>
-                </a>
-              </li>
-            </ul>
+  </head>
+  <body>
+    <header
+      id="hero"
+      class="header"
+      style="background-image: url(img/bg-header.jpg);"
+    >
+      <nav class="nav headroom fixed-top" id="nav">
+        <div class="container flex flex--nav">
+          <a class="nav__logo svg" href="#">
+            <svg width="54px" height="72px" viewBox="0 0 53.531 72">
+              <use xlink:href="#logo" />
+            </svg>
+          </a>
+    
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="#" class="nav__link active">HOME</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">ABOUT</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">SERVICES</a>
+            </li>
+            <li class="nav__item">
+              <a href="#works" class="nav__link">works</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">CONTACT</a>
+            </li>
+          </ul>
+          <div class="nav__toggle svg">
+            <svg width="40px" height="72px" viewBox="0 0 31 15">
+              <use xlink:href="#toggle" />
+            </svg>
           </div>
-        </footer>
-
-    <svg style="display: none;">
-        <symbol id="logo">
-            <path d="M274.714,88.981A46.989,46.989,0,0,1,271.3,103.7c-0.623,1.416-1.756,2.767-2.279,4.3h-0.228v-1.132c0.428-.665.219-1.575,0.456-2.491,1.128-4.357,1.213-10.17-.684-13.811-3.24-6.221-9.728-4.129-16.181-6.793a12.425,12.425,0,0,1-5.7-5.434l-1.368-3.849A14.911,14.911,0,0,1,246,66.339c3.107-8.131,10.872-11.709,20.284-7.245V58.415c-0.807-1.1-.545-2.733-0.912-4.3-0.985-4.219-1.744-18.067,2.963-18.113,1.277,0.926,3.731.885,3.875,2.944a1.666,1.666,0,0,0-.456,1.358h0.228V40.075c0.981-1.03,1.25-3.371,2.963-3.623,1.368,1.22,3.683,1.463,4.1,3.623a17.49,17.49,0,0,0-2.735,5.887h0.456c1.428-1.877,7.312-7.251,10.028-6.793a14.113,14.113,0,0,1,2.051,4.3c-1.435.51-2.095,1.9-3.191,2.717-4,3-7.231,7.374-9.8,11.774h0.684c1.569-1.22,7.973-1.811,10.712-1.132,7.222,1.792,9.252,4.271,10.939,11.547a13.388,13.388,0,0,1,.228,4.755c-2.183,9.442-6.79,14.209-16.409,16.3C279.436,89.993,276.873,89.1,274.714,88.981Z" transform="translate(-245 -36)"/>
-        </symbol>
-        <symbol id="toggle">
-            <line y1="0.5" x2="31" y2="0.5"/>
-            <line y1="7.5" x2="15" y2="7.5"/>
-            <line y1="14.5" x2="31" y2="14.5"/>
-        </symbol>
-        <symbol id="arrow__left">
-          <path id="arrow-left.svg" class="cls-1" d="M183.877,3161.53a1.125,1.125,0,0,1-.359,1.46l-20.057,17.87a0.94,0.94,0,0,1-1.338-.39,1.121,1.121,0,0,1,.359-1.46l20.057-17.87A0.941,0.941,0,0,1,183.877,3161.53Zm0,36.94a1.123,1.123,0,0,0-.359-1.46l-20.057-17.87a0.94,0.94,0,0,0-1.338.39,1.124,1.124,0,0,0,.359,1.46l20.057,17.87A0.941,0.941,0,0,0,183.877,3198.47Z" transform="translate(-162 -3161)"/>
-        </symbol>
-        <symbol id="arrow__right">
-          <path id="arrow_right.svg" class="cls-1" d="M1410.12,3161.53a1.124,1.124,0,0,0,.36,1.46l20.06,17.87a0.942,0.942,0,0,0,1.34-.39,1.122,1.122,0,0,0-.36-1.46l-20.06-17.87A0.942,0.942,0,0,0,1410.12,3161.53Zm0,36.94a1.122,1.122,0,0,1,.36-1.46l20.06-17.87a0.942,0.942,0,0,1,1.34.39,1.124,1.124,0,0,1-.36,1.46l-20.06,17.87A0.942,0.942,0,0,1,1410.12,3198.47Z" transform="translate(-1410 -3161)"/>
-        </symbol>
-        <symbol id="arrow__up">
-          <path id="ico-arrow-top.svg" class="cls-1" d="M1446.49,5308.88a1.065,1.065,0,0,1-1.38-.35l-16.92-19.13a0.9,0.9,0,0,1,.37-1.28,1.065,1.065,0,0,1,1.38.35l16.92,19.13A0.9,0.9,0,0,1,1446.49,5308.88Zm-34.98,0a1.065,1.065,0,0,0,1.38-.35l16.92-19.13a0.9,0.9,0,0,0-.37-1.28,1.065,1.065,0,0,0-1.38.35l-16.92,19.13A0.9,0.9,0,0,0,1411.51,5308.88Z" transform="translate(-1411 -5288)"/>
-        </symbol>
-    </svg>
-    <script src="https://kit.fontawesome.com/8c5aa2b921.js" crossorigin="anonymous"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJjLItEmcoCaVbZ7273yC8nIkBxlYtp0Y&callback=initMap" async defer></script>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="header__content flex">
+          <h1 class="header__title">CreativE DIGITAL Project</h1>
+          <div class="header__subtitle">
+            Duis mollis, est non commodo luctus, <br />nisi erat porttitor ligula,
+            eget lacinia odio sem nec elit.
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="about" class="section about">
+        <div class="container flex">
+          <div class="section__cover">
+            <img
+              src="#"
+              class="section__img lazyload"
+              data-src="img/about.jpg"
+              alt="about us"
+            />
+            <h2 class="section__title">about us</h2>
+          </div>
+          <div class="section__description">
+            <div class="section__text">
+              <p>
+                Nullam quis risus eget urna <strong>mollis ornare</strong> vel
+                eu leo. Donec id elit non mi porta gravida at eget metus. Donec
+                ullamcorper nulla non metus auctor fringilla. Vivamus sagittis
+                lacus vel augue laoreet rutrum faucibus dolor auctor.
+              </p>
+              <p>
+                <strong>Morbi leo risus</strong>, porta ac consectetur ac,
+                vestibulum at eros. Vivamus sagittis lacus vel augue laoreet
+                rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque
+                ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus
+                mollis interdum. Cras mattis consectetur purus sit amet
+                <em>fermentum</em>. Sed posuere consectetur est at lobortis.
+              </p>
+            </div>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="section services">
+        <div class="container flex">
+          <div class="section__description section__description--p0 flex">
+            <div class="section__card section__card--bg-gray">
+              <img
+                src="#"
+                data-src="img/Icon-Graphic.png"
+                alt="Graphic Design"
+                class="lazyload section__logo-title section__logo-title--card"
+              />
+              <h4 class="section__card-title">Graphic Design</h4>
+              <div class="section__subtitle section__subtitle--card">
+                Cras mattis consectetur purus sit amet fermentum.
+              </div>
+            </div>
+            <div class="section__card">
+              <img
+                src="#"
+                data-src="img/Icon-Web.png"
+                alt="WEB DEVELOPMENT"
+                class="lazyload section__logo-title section__logo-title--card"
+              />
+              <h4 class="section__card-title">WEB DEVELOPMENT</h4>
+              <div class="section__subtitle section__subtitle--card">
+                Cras mattis consectetur purus sit amet fermentum.
+              </div>
+            </div>
+            <div class="section__card">
+              <img
+                src="#"
+                data-src="img/Icon-SEO.png"
+                alt="SEO & MARKETING"
+                class="lazyload section__logo-title section__logo-title--card"
+              />
+              <h4 class="section__card-title">SEO & MARKETING</h4>
+              <div class="section__subtitle section__subtitle--card">
+                Cras mattis consectetur purus sit amet fermentum.
+              </div>
+            </div>
+            <div class="section__card section__card--bg-gray">
+              <img
+                src="#"
+                data-src="img/Icon-Mobile.png"
+                alt="MOBILE DEVELOPMENT"
+                class="lazyload section__logo-title section__logo-title--card"
+              />
+              <h4 class="section__card-title">MOBILE DEVELOPMENT</h4>
+              <div class="section__subtitle section__subtitle--card">
+                Cras mattis consectetur purus sit amet fermentum.
+              </div>
+            </div>
+          </div>
+          <div class="section__cover">
+            <img
+              src="#"
+              class="section__img lazyload"
+              data-src="img/services.jpg"
+              alt="about us"
+            />
+            <h2 class="section__title">our services</h2>
+            <blockquote class="section__subtitle blockquote" cite="#">
+              “Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae
+              elit libero, haretra augue.”
+              <div class="section__author">- Borat -</div>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+      <section
+        id="works"
+        class="section works"
+        style="background-image: url(img/bg-works.jpg);"
+      >
+        <div class="container">
+          <h2 class="section__title section__title--relative">recent works</h2>
+        </div>
+        <div class="arrows">
+          <a
+            href="#"
+            class="slider__arrow slider__arrow--left work-slider__arrow--left"
+          >
+            <svg width="22px" height="38px" viewBox="0 0 22 38">
+              <use xlink:href="#arrow__left" />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="slider__arrow slider__arrow--right work-slider__arrow--right"
+          >
+            <svg width="22px" height="38px" viewBox="0 0 22 38">
+              <use xlink:href="#arrow__right" />
+            </svg>
+          </a>
+        </div>
+        <div class="container container--730 slider__container">
+          <div class="work-slider">
+            <a href="#" class="slide">
+              <img
+                src="#"
+                class="slider__img lazyload"
+                data-src="img/works-slider.jpg"
+                alt="our work"
+              />
+            </a>
+            <a href="#" class="slide">
+              <img
+                src="#"
+                class="slider__img lazyload"
+                data-src="img/works-slider.jpg"
+                alt="our work"
+              />
+            </a>
+            <a href="#" class="slide">
+              <img
+                src="#"
+                class="slider__img lazyload"
+                data-src="img/works-slider.jpg"
+                alt="our work"
+              />
+            </a>
+            <a href="#" class="slide">
+              <img
+                src="#"
+                class="slider__img lazyload"
+                data-src="img/works-slider.jpg"
+                alt="our work"
+              />
+            </a>
+          </div>
+          <a href="#" class="btn btn--white">View Gallery</a>
+        </div>
+      </section>
+      <section class="section team">
+        <div class="container">
+          <h2
+            class="section__title section__title--relative section__title--text-black"
+          >
+            meet our team
+          </h2>
+          <div class="arrows">
+            <a
+              href="#"
+              class="slider__arrow slider__arrow--left team-slider__arrow--left"
+            >
+              <svg width="22px" height="38px" viewBox="0 0 22 38">
+                <use xlink:href="#arrow__left" />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="slider__arrow slider__arrow--right team-slider__arrow--right"
+            >
+              <svg width="22px" height="38px" viewBox="0 0 22 38">
+                <use xlink:href="#arrow__right" />
+              </svg>
+            </a>
+          </div>
+          <div class="slider__container">
+            <div class="slider-team">
+              <div class="slide">
+                <div class="team__card">
+                  <img
+                    src="#"
+                    class="team__img lazyload"
+                    data-src="img/team-miguel-obrien.jpg"
+                    alt="Michuel Obrien"
+                  />
+                  <div class="team__wrap">
+                    <div class="team__name">Michuel Obrien</div>
+                    <div class="team__position">CEO & Founder</div>
+                    <ul class="social">
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-linkedin"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-google"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-twitter"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="team__card">
+                  <img
+                    src="#"
+                    class="team__img lazyload"
+                    data-src="img/team-lida-morrison.jpg"
+                    alt="Jackie Carroll"
+                  />
+                  <div class="team__wrap">
+                    <div class="team__name">Michuel Obrien</div>
+                    <div class="team__position">ART Director</div>
+                    <ul class="social">
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-behance"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-linkedin"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-google"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-twitter"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="team__card">
+                  <img
+                    src="#"
+                    class="team__img lazyload"
+                    data-src="img/team-ida-morrison.jpg"
+                    alt="Ida Morrison"
+                  />
+                  <div class="team__wrap">
+                    <div class="team__name">Ida Morrison</div>
+                    <div class="team__position">Designer</div>
+                    <ul class="social">
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-behance"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-linkedin"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-google"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-twitter"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="team__card">
+                  <img
+                    src="#"
+                    class="team__img lazyload"
+                    data-src="img/team-miguel-obrien.jpg"
+                    alt="Michuel Obrien"
+                  />
+                  <div class="team__wrap">
+                    <div class="team__name">Michuel Obrien</div>
+                    <div class="team__position">CEO & Founder</div>
+                    <ul class="social">
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-linkedin"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-google"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-twitter"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="team__card">
+                  <img
+                    src="#"
+                    class="team__img lazyload"
+                    data-src="img/team-lida-morrison.jpg"
+                    alt="Jackie Carroll"
+                  />
+                  <div class="team__wrap">
+                    <div class="team__name">Michuel Obrien</div>
+                    <div class="team__position">ART Director</div>
+                    <ul class="social">
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-behance"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-linkedin"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-google"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-twitter"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="team__card">
+                  <img
+                    src="#"
+                    class="team__img lazyload"
+                    data-src="img/team-ida-morrison.jpg"
+                    alt="Ida Morrison"
+                  />
+                  <div class="team__wrap">
+                    <div class="team__name">Ida Morrison</div>
+                    <div class="team__position">Designer</div>
+                    <ul class="social">
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-behance"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-linkedin"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-google"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a href="#" class="social__link" target="blanck">
+                          <i class="social__icon fab fa-twitter"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="touch-map">
+        <h2 class="section__title section__title--top-20">get in touch</h2>
+        <ul class="section__hidden-box">
+          <li class="section__block">
+            <div class="section__link flex">
+              <div class="section__icon flex flex--jc-c">
+                <img
+                  src="#"
+                  class="lazyload"
+                  data-src="img/Icon-Address.png"
+                  alt="Icon"
+                />
+              </div>
+              <a
+                target="blank"
+                href="https://maps.google.com?saddr=Current+Location&daddr=43.12345,-76.12345"
+                class="section__adress"
+                >Ikan Piranha Atas 220C<br />
+                Malang - East Java<br />
+                Indonesia
+              </a>
+            </div>
+          </li>
+          <li class="section__block">
+            <div class="section__link flex">
+              <div class="section__icon flex flex--jc-c">
+                <img
+                  src="#"
+                  class="lazyload"
+                  data-src="img/icon-mobile.png"
+                  alt="Icon"
+                />
+              </div>
+              <a href="tel:+38(000)000-00-00" class="section__adress"
+                >+38 (000) 000-00-00</a
+              >
+            </div>
+          </li>
+        </ul>
+        <div class="map" id="map"></div>
+        <form id="form" class="form" action="#" method="get">
+          <input
+            class="form__name"
+            type="text"
+            value=""
+            placeholder="Your Name"
+          />
+          <input
+            class="form__email"
+            type="email"
+            value=""
+            placeholder="Your Email"
+          />
+          <textarea
+            class="form__message"
+            name="text"
+            id="text"
+            cols="30"
+            rows="8"
+            placeholder="Your Message"
+          ></textarea>
+          <span class="form__toucn">touch the map and I'll hide</span>
+          <button class="form__btn" type="submit">Send message</button>
+        </form>
+        <a href="#hero" class="swipe-up flex flex--jc-c">
+          <svg class="svg" width="36" height="21" viewBox="0 0 36 21">
+            <use xlink:href="#arrow__up" />
+          </svg>
+        </a>
+      </section>
+    </main>
+    //= partials/_footer.html //= partials/_sprite.html
+    <script
+      src="https://kit.fontawesome.com/8c5aa2b921.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJjLItEmcoCaVbZ7273yC8nIkBxlYtp0Y&callback=initMap"
+      async
+      defer
+    ></script>
     <script src="js/main.min.js"></script>
-</body>
+  </body>
 </html>
