@@ -48,9 +48,9 @@
         autoplay: true,
         autoplaySpeed: 2000,
         pauseOnFocus: true,
-        arrows: true,
-        prevArrow: '.slider__arrow--left',
-        nextArrow: '.slider__arrow--right',
+        // arrows: true,
+        prevArrow: '.work-slider__arrow--left',
+        nextArrow: '.work-slider__arrow--right',
         dots: true,
     });
     
@@ -68,12 +68,12 @@
     let $teamSlider = $('.slider-team').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 1000,
+        autoplay: true,
+        autoplaySpeed: 2000,
         dots: false,
         pauseOnFocus: true,
-        prevArrow: '.slider__arrow--left',
-        nextArrow: '.slider__arrow--right',
+        prevArrow: '.team-slider__arrow--left',
+        nextArrow: '.team-slider__arrow--right',
         responsive: [
             {
               breakpoint: 1024,
