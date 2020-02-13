@@ -132,6 +132,7 @@
         }
         &__subtitle {
             font-size: 2rem;
+            line-height: 1.2;
         }
     }
     .touch-map {
@@ -152,7 +153,6 @@
         .swipe-up {
             right: 0px;
             bottom: 0px;
-            // background-color: $white;
         }
     }
     .section {
@@ -242,14 +242,7 @@
     }
 }
 @media screen and (max-width: 480px) {
-    .header {
-        &__title {
-            font-size: 2rem;
-        }
-        &__subtitle {
-            font-size: 1rem;
-        }
-    }
+
     .section {
         &__card {
             padding-top: 70%;

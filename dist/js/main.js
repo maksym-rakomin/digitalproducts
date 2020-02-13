@@ -3655,17 +3655,20 @@ function initMap() {
     let navMenu = document.querySelector('.nav__items'),
         header  = document.getElementById('hero'),
         nav  = document.getElementById('nav'),
-        toggle  = document.querySelector('.nav__toggle');
+        toggle  = document.querySelector('.nav__toggle'),
+        body    = document.body;
 
         toggle.addEventListener('click', () => {
             navMenu.classList.toggle('open');
             header.classList.toggle('open');
-            nav.style.backgroundColor = 'rgba(159,154,207,.8)';
+            nav.classList.toggle('nav__open');
+            body.classList.toggle('overflow-y-hidden');
           });
           
           navMenu.addEventListener('click', () => {
             navMenu.classList.remove('open');
             header.classList.remove('open');
+            body.classList.remove('overflow-y-hidden');
 
         });
 })();
@@ -3698,7 +3701,6 @@ function initMap() {
         autoplay: true,
         autoplaySpeed: 2000,
         pauseOnFocus: true,
-        // arrows: true,
         prevArrow: '.work-slider__arrow--left',
         nextArrow: '.work-slider__arrow--right',
         dots: true,
@@ -3768,22 +3770,23 @@ function initMap() {
 // меняем background nav в зависимости от высоты прокрутки
 (function (){
   'use strict';
-  let header = document.getElementById('hero'),
-      nav = document.getElementById('nav'),
-    heightHeader = null,
-    heightWindow = null;
+  let header       = document.getElementById('hero'),
+      nav          = document.getElementById('nav'),
+      heightHeader = null,
+      heightNav    = null,
+      heightWindow = null;
     
 
     document.addEventListener('scroll', () => {
       heightHeader = header.scrollHeight;
+      heightNav = nav.scrollHeight;
       heightWindow = window.pageYOffset;
 
-    if ((heightHeader - 140) > heightWindow) {
-      nav.style.backgroundColor = 'transparent';
-
+    if ((heightHeader - (heightNav / 2)) > heightWindow) {
+      nav.classList.remove('nav__transparent');
+      
     } else {
-      nav.style.backgroundColor = 'rgba(159,154,207,.8)';
-
+      nav.classList.add('nav__transparent');
     }
   })
 

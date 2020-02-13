@@ -42,90 +42,122 @@ a {
 }
 
     
-    .btn {
-        display: inline-block;
-        padding: 20px 50px;
-        font-style: italic;
-        @include text($text-color, $text-font, inherit, 400, 1);
-        border: 1px solid $text-color;
-        border-right-color: transparent;
-        border-bottom-color: transparent;
+.btn {
+    display: inline-block;
+    padding: 20px 50px;
+    font-style: italic;
+    @include text($text-color, $text-font, inherit, 400, 1);
+    border: 1px solid $text-color;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    @include hover {
+        border-right-color: $text-color;
+        border-bottom-color: $text-color;
+        border-left-color: transparent;
+        border-top-color: transparent;
+    }
+    &--white {
+        color: $white;
+        border-left-color: $white;
+        border-top-color: $white;
         @include hover {
-            border-right-color: $text-color;
-            border-bottom-color: $text-color;
+            border-right-color: $white;
+            border-bottom-color: $white;
             border-left-color: transparent;
             border-top-color: transparent;
         }
-        &--white {
-            color: $white;
-            border-left-color: $white;
-            border-top-color: $white;
-            @include hover {
-                border-right-color: $white;
-                border-bottom-color: $white;
-                border-left-color: transparent;
-                border-top-color: transparent;
-            }
-            
-        }
+        
     }
-    .swipe-up {
-        width: 90px;
-        height: 90px;
-        background-color: fade-out($brand-color, .5);
-        position: absolute;
-        bottom: 5%;
-        right: 5%;
-        @include hover {
-            background-color: fade-out($brand-color, 0);
-        }
+}
+.swipe-up {
+    width: 90px;
+    height: 90px;
+    background-color: fade-out($brand-color, .5);
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    @include hover {
+        background-color: fade-out($brand-color, 0);
     }
+}
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
     
     
     
     
-    
-    .svg {
-        fill: fade-out($white, .3);
-        fill-rule: evenodd;
-        stroke: fade-out($white, .3);
-        stroke-width: 1px;
-        @include hover {
-            fill: fade-out($white, 0);
-            stroke: fade-out($white, 0);
-        }
-    }   
-    .header {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        min-height: 100vh;
-        color: $white;
-        &__content {
-            height: 80vh;
-            flex-direction: column;
-            justify-content: center;
-        }
-        &__title {
-            text-transform: uppercase;
-            margin: 20px auto;
-            text-align: center;
-            @include text($white, $title-font, 5rem, 700, 1);
-            padding: 5px;
-        }
-        &__subtitle {
-            @include text($white, $text-font, 3rem, 400, 1);
-            font-style: italic;
-            width: 80%;
-            text-align: center;
-            padding: 5px;
+
+.svg {
+    fill: fade-out($white, .3);
+    fill-rule: evenodd;
+    stroke: fade-out($white, .3);
+    stroke-width: 1px;
+    @include hover {
+        fill: fade-out($white, 0);
+        stroke: fade-out($white, 0);
+    }
+}   
+.header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: $white;
+    &__content {
+        height: 80vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title {
+        text-transform: uppercase;
+        margin: 20px auto;
+        text-align: center;
+        @include text($white, $title-font, 5rem, 700, 1);
+        padding: 5px;
+    }
+    &__subtitle {
+        @include text($white, $text-font, 3rem, 400, 1);
+        font-style: italic;
+        width: 80%;
+        text-align: center;
+        padding: 5px;
     }
 }  
+        // .open {
+        //     &.nav {
+        //         background-color: red;
+
+        //     }
+        // }
 .nav {
     padding: 30px 0;
     position: relative;
-    
-    
+
+    &__open {
+        background-color: fade-out($brand-color, .2);
+
+    }
+
+    &__transparent{
+        background-color: fade-out($brand-color, .2);
+        padding: 5px 0;
+        .nav__svg {
+            width: 40px;
+            height: 54px;
+            &--toggle {
+                width: 31px;
+            }
+        }
+    }
+    &__svg {
+        width: 54px;
+        height: 72px;
+        &--toggle {
+            width: 42px;
+        }
+    }
+
     &__logo {
         display: block;
     }
@@ -149,6 +181,7 @@ a {
     }
 
 }
+
 .footer {
     background: $brand-color;
     padding: 75px 0;
