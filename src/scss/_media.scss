@@ -94,7 +94,6 @@
     }
 
     .nav{
-        // background-color: fade-out($brand-color, .2);
 
         &__toggle {
             display: block;
@@ -105,15 +104,10 @@
         &__items {
             background-color: fade-out($brand-color, .2);
             position: absolute;
-            // width: 100vw;
             height: 100vh;
-            // position: fixed;
-            // top: 0;
             bottom: 0;
             right: 0;
             left: 0;
-            // z-index: 1;
-            // padding: 30px;
             transform: translateY(-200%);
             transition: 1s ease
         }
