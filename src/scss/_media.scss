@@ -62,7 +62,6 @@
     }
     .services > .flex {
             flex-direction: column-reverse;
-        // }
     }
     .slider {
         &__arrow {
@@ -92,6 +91,15 @@
             align-items: flex-end;
         }
     }
+    .open {
+        overflow-y: hidden;
+        .nav {
+            background-color: fade-out($brand-color, .2);
+        }
+        .nav__items{
+            transform: translateY(100%);
+        }
+    }
 
     .nav{
 
@@ -111,9 +119,6 @@
             transform: translateY(-200%);
             transition: 1s ease
         }
-        .open {
-            transform: translateY(100%);
-        }
         &__item {
             display: block;
             text-align: center;
@@ -130,7 +135,6 @@
         }
     }
     .touch-map {
-        // background-color: $gray-light;
         
         .form {
             width: 100%;
@@ -232,6 +236,18 @@
     .section {
         &__card {
             width: 100%;
+            &:nth-child(1) {
+                order: 1;
+            }
+            &:nth-child(2) {
+                order: 2;
+            }
+            &:nth-child(3) {
+                order: 4;
+            }
+            &:nth-child(4) {
+                order: 3;
+            }
         }
     }
 }

@@ -124,20 +124,10 @@ a {
         padding: 5px;
     }
 }  
-        // .open {
-        //     &.nav {
-        //         background-color: red;
 
-        //     }
-        // }
 .nav {
     padding: 30px 0;
     position: relative;
-
-    &__open {
-        background-color: fade-out($brand-color, .2);
-
-    }
 
     &__transparent{
         background-color: fade-out($brand-color, .2);
@@ -383,8 +373,6 @@ a {
         @include overflow;
     }    
 }
-
-
 
 
 

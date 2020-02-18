@@ -3653,22 +3653,15 @@ function initMap() {
     'use strict';
 
     let navMenu = document.querySelector('.nav__items'),
-        header  = document.getElementById('hero'),
-        nav  = document.getElementById('nav'),
         toggle  = document.querySelector('.nav__toggle'),
         body    = document.body;
 
-        toggle.addEventListener('click', () => {
-            navMenu.classList.toggle('open');
-            header.classList.toggle('open');
-            nav.classList.toggle('nav__open');
-            body.classList.toggle('overflow-y-hidden');
+        toggle.addEventListener('click', () => {;
+            body.classList.toggle('open');
           });
           
           navMenu.addEventListener('click', () => {
-            navMenu.classList.remove('open');
-            header.classList.remove('open');
-            body.classList.remove('overflow-y-hidden');
+            body.classList.remove('open');
 
         });
 })();
