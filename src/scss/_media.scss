@@ -95,14 +95,22 @@
         overflow-y: hidden;
         .nav {
             background-color: fade-out($brand-color, .2);
-        }
-        .nav__items{
-            transform: translateY(100%);
+            &__items{
+                animation-name: opacity-normal, transform-normal;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+            }
+            &__item {
+                color: fade-out($white, .2);
+                .active {
+                    color :fade-out($white, 0)
+                }
+            }
         }
     }
-
+    
     .nav{
-
+        
         &__toggle {
             display: block;
             cursor: pointer;
@@ -110,19 +118,23 @@
             z-index: 2;
         }
         &__items {
-            background-color: fade-out($brand-color, .2);
             position: absolute;
             height: 100vh;
             bottom: 0;
             right: 0;
             left: 0;
-            transform: translateY(-200%);
-            transition: 1s ease
+            animation-name: transform-reverse, opacity-reverse;
+            animation-fill-mode: forwards;
+            animation-duration: 1s;
         }
         &__item {
+            color: fade-out($brand-color, 1);
             display: block;
             text-align: center;
             padding: 10px;
+            .active {
+                color :fade-out($brand-color, 1)
+            }
         }
     }
     .header {

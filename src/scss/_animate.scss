@@ -1,0 +1,44 @@
+@keyframes transform-normal  {
+    0%{
+        transform: translateY(-200%);
+    }
+    1% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+@keyframes transform-reverse {
+    0% {
+        transform: translateY(100%);
+    }
+    99% {
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-200%);
+    }
+}
+@keyframes opacity-normal  {
+    0%{
+        background-color: fade-out($brand-color, 1);
+    }
+    1% {
+        background-color: fade-out($brand-color, 1);
+    }
+    100% {
+        background-color: fade-out($brand-color, .2);
+    }
+}
+@keyframes opacity-reverse {
+    0% {
+        background-color: fade-out($brand-color, .2);
+    }
+    99% {
+        background-color: fade-out($brand-color, 1);
+    }
+    100%{
+        background-color: fade-out($brand-color, 1);
+    }
+}
